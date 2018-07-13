@@ -10,3 +10,5 @@ notes
 *.ntvs*
 *.njsproj
 *.sln
+/nbproject/private/
+/nbproject/
