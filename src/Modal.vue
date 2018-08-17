@@ -110,7 +110,6 @@
                         // Some options can only be set to dynamically generated
                         // modals and not to the inline modals
                         if (! this.id) {
-                            this.title = options.title ? options.title : '';
                             this.body = options.body ? options.body : '';
 
                             if (options.bodyUrl) {
@@ -124,8 +123,9 @@
                             }
                         }
 
+                        this.title = options.title ? options.title : '';
                         this.buttons = options.buttons ? options.buttons : [];
-
+                        
                         this.canClose = typeof options.dismissible === 'boolean'
                             ? options.dismissible
                             : this.dismissible;
